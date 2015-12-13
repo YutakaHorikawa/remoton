@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  video(id='localVideo')
+  video(id='remoteVideo')
+
+  button(id="startVideo", class="start-video", data-action="bea").
+    start video
+
+  button(id="stopVideo", class="stop-video", data-action="bea").
+    stop video
+
+  div(id="connectWrap" style="display:none;")
+    button(id="connect", class="connect-video", data-action="bea").
+      connect
+
+    button(id="hangUp", class="hang-video", data-action="bea").
+      hang up
+  
+  textarea(id='textForSendSdp', class='none-display')
+  textarea(id='textForSendIce', class='none-display')
+  textarea(id='textForReceiveSdp', class='none-display')
+  textarea(id='textForReceiveIce', class='none-display')
+

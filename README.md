@@ -1,1 +1,1 @@
-# remoton
+# browserifytemplate
