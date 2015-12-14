@@ -1,1 +1,1 @@
-# browserifytemplate
+# WebRTC Video Chat
