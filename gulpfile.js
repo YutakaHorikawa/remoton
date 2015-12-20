@@ -28,9 +28,7 @@ gulp.task('transpile:js', function() {
         entries: src,
         debug: true
     })
-    .transform(babelify.configure({
-        optional: ["es7.decorators"]
-    }))
+    .transform('babelify', { presets: ['es2015', 'stage-0'] })
     .bundle()
     .on('error', errorHandler)
     .pipe( source('application.js') )
